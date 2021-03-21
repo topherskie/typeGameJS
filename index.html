@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles/flatly.bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <title>TYPE GAME</title>
+  </head>
+  <body>
+    <div
+      class="alert alert-dismissible alert-danger text-center animate__animated animate__heartBeat txtErr"
+    >
+      <strong>GAME OVER</strong>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html">FAST FINGERS</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              >Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Players</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Rankings</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- end of NAV -->
+
+    <div class="container">
+      <div class="text-center">
+        <h3 id="curHighScore"></h3>
+      </div>
+      <div class="text-center">
+        <h3 id="currentScore">Score: 0</h3>
+      </div>
+      <div class="text-center"><h2 id="txtTimer">Time</h2></div>
+      <br />
+      <br />
+      <h3 class="text-center own-words" id="output">Words</h3>
+
+      <div class="form-group">
+        <label class="col-form-label col-form-label-lg" for="inputLarge"
+          >Type Training</label
+        >
+        <input
+          class="form-control form-control-lg text-center"
+          type="text"
+          placeholder="Type here..."
+          id="txtInput"
+          autofocus
+        />
+      </div>
+      <div>
+        <input
+          type="submit"
+          name="submit"
+          class="btn-lg btn-outline-primary"
+          value="RESET"
+          id="btnReset"
+        />
+      </div>
+      <br />
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
